@@ -8,7 +8,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              AI 정책연구소
+              한신대 AI 정책연구소
             </h1>
             <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
               인공지능 기술의 사회적 영향과 정책 방향을 연구하여
@@ -113,7 +113,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">연구 협력 및 문의</h2>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            AI 정책 연구에 관심이 있으시거나 협력을 원하시면 언제든지 연락해 주세요.
+            한신대 AI 정책연구소와 협력을 원하시면 언제든지 연락해 주세요.
           </p>
           <Link
             href="/contact"

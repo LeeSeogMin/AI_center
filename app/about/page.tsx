@@ -6,7 +6,7 @@ export default function AboutPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">연구소 소개</h1>
           <p className="text-xl text-gray-600">
-            AI 기술과 사회의 조화로운 발전을 위한 정책 연구
+            한신대학교 AI 정책연구소 - AI 기술과 사회의 조화로운 발전을 위한 정책 연구
           </p>
         </div>
 
@@ -49,9 +49,9 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto">
             <div className="space-y-8">
               {[
-                { year: '2024', event: 'AI 정책연구소 설립' },
-                { year: '2024', event: '첫 번째 AI 정책 세미나 개최' },
-                { year: '2024', event: '정부 AI 정책 자문위원회 참여' },
+                { year: '2024', event: '한신대학교 AI 정책연구소 설립' },
+                { year: '2024', event: '연구소 운영 체계 구축' },
+                { year: '2025', event: 'AI 정책 연구 본격 추진' },
               ].map((item, index) => (
                 <div key={index} className="flex items-center">
                   <div className="w-24 text-primary-600 font-bold text-lg">

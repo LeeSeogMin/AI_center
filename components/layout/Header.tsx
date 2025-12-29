@@ -20,7 +20,7 @@ export default function Header() {
         <div className="flex h-16 justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="text-xl font-bold text-primary-700">AI 정책연구소</span>
+              <span className="text-xl font-bold text-primary-700">한신대 AI 정책연구소</span>
             </Link>
           </div>
 

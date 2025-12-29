@@ -24,8 +24,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold mb-1">주소</h3>
                   <p className="text-gray-600">
-                    서울특별시 OO구 OO로 123<br />
-                    OO대학교 OO관 000호
+                    경기도 오산시 한신대길 137 (양산동)<br />
+                    한신대학교 소통관 8431호
                   </p>
                 </div>
               </div>
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">이메일</h3>
-                  <p className="text-gray-600">ai-policy@university.ac.kr</p>
+                  <p className="text-gray-600">nsc0203@hs.ac.kr</p>
                 </div>
               </div>
 
@@ -50,21 +50,20 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">전화</h3>
-                  <p className="text-gray-600">02-000-0000</p>
+                  <p className="text-gray-600">031-379-0842</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">운영 시간</h3>
+                  <h3 className="font-semibold mb-1">소속</h3>
                   <p className="text-gray-600">
-                    평일 09:00 - 18:00<br />
-                    (점심시간 12:00 - 13:00)
+                    한신대학교 AI 정책연구소
                   </p>
                 </div>
               </div>
@@ -129,12 +128,25 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Map placeholder */}
+        {/* Map */}
         <div className="mt-16">
           <h2 className="text-2xl font-bold mb-8">오시는 길</h2>
-          <div className="bg-gray-200 h-96 rounded-xl flex items-center justify-center text-gray-500">
-            지도가 표시될 영역입니다<br />
-            (Google Maps 또는 Kakao Map API 연동 필요)
+          <div className="bg-gray-100 rounded-xl overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.8892!2d127.0772!3d37.1492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b45!2z7ZWc7Iug64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="한신대학교 위치"
+            />
+          </div>
+          <div className="mt-4 p-4 bg-gray-50 rounded-lg">
+            <p className="text-gray-600">
+              <strong>대중교통:</strong> 오산역에서 버스 이용 (한신대 정문 하차)
+            </p>
           </div>
         </div>
       </div>
