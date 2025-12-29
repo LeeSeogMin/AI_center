@@ -44,27 +44,35 @@ export default async function BoardPage({
   const samplePosts = [
     {
       id: '1',
-      title: '2024년 상반기 AI 정책 세미나 개최 안내',
+      title: '한신대학교 AI 정책연구소 설립 공지',
       category: 'notice',
       author_name: '관리자',
-      view_count: 156,
-      created_at: '2024-03-15',
+      view_count: 1,
+      created_at: '2025-12-29',
     },
     {
       id: '2',
+      title: '2025년 상반기 AI 정책 세미나 개최 안내',
+      category: 'notice',
+      author_name: '관리자',
+      view_count: 156,
+      created_at: '2025-01-15',
+    },
+    {
+      id: '3',
       title: 'AI 윤리 가이드라인 연구보고서',
       category: 'data',
       author_name: '김연구',
       view_count: 89,
-      created_at: '2024-03-10',
+      created_at: '2025-01-10',
     },
     {
-      id: '3',
+      id: '4',
       title: '연구소 방문 문의드립니다',
       category: 'qna',
       author_name: '홍길동',
       view_count: 23,
-      created_at: '2024-03-08',
+      created_at: '2025-01-08',
     },
   ]
 

@@ -23,15 +23,59 @@ export default async function PostDetailPage({
     .single()
 
   // 샘플 데이터 (Supabase 연동 전)
-  const samplePost = {
-    id: id,
-    title: '2024년 상반기 AI 정책 세미나 개최 안내',
-    content: `안녕하세요, AI 정책연구소입니다.
+  const samplePosts: { [key: string]: any } = {
+    '1': {
+      id: '1',
+      title: '한신대학교 AI 정책연구소 설립 공지',
+      content: `안녕하세요.
 
-2024년 상반기 AI 정책 세미나를 아래와 같이 개최합니다.
+한신대학교 AI 정책연구소가 2025년 12월 29일 한신대학교 학술원 산하 연구소로 공식 설립되었음을 알려드립니다.
 
-■ 일시: 2024년 4월 15일(월) 14:00-17:00
-■ 장소: OO대학교 OO관 대강당
+■ 연구소 개요
+- 명칭: 한신대학교 AI 정책연구소
+- 설립일: 2025년 12월 29일
+- 소속: 한신대학교 학술원
+- 비전: 국가·지자체의 AI기반 공공혁신을 위한 연구 허브
+
+■ 연구소 구성
+- 연구소장: 노승철 교수
+- AI 행정혁신실 (실장: 윤건 교수)
+- AI 지역학연구실 (실장: 주장환 교수)
+- AI 개발창업실 (실장: 이석민 교수)
+
+■ 미션
+AI와 데이터 과학을 통해 행정의 과학화·투명화·효율화를 촉진하고,
+공공가치 창출과 지역사회 문제 해결에 기여합니다.
+
+■ 핵심가치
+- 공공성 (Responsibility)
+- 신뢰성 (Reliability)
+- 투명성 (Transparency)
+- 포용성 (Inclusion)
+- 개방성 (Open Collaboration)
+
+앞으로 AI 기술을 통한 공공혁신 연구에 최선을 다하겠습니다.
+많은 관심과 협력 부탁드립니다.
+
+감사합니다.
+
+한신대학교 AI 정책연구소`,
+      category: 'notice',
+      author_id: '1',
+      author_name: '관리자',
+      view_count: 1,
+      created_at: '2025-12-29T10:00:00',
+      updated_at: '2025-12-29T10:00:00',
+    },
+    '2': {
+      id: '2',
+      title: '2025년 상반기 AI 정책 세미나 개최 안내',
+      content: `안녕하세요, AI 정책연구소입니다.
+
+2025년 상반기 AI 정책 세미나를 아래와 같이 개최합니다.
+
+■ 일시: 2025년 4월 15일(월) 14:00-17:00
+■ 장소: 한신대학교 소통관
 ■ 주제: "생성형 AI 시대의 정책 방향"
 
 ■ 프로그램
@@ -44,13 +88,16 @@ export default async function PostDetailPage({
 많은 관심과 참여 부탁드립니다.
 
 감사합니다.`,
-    category: 'notice',
-    author_id: '1',
-    author_name: '관리자',
-    view_count: 156,
-    created_at: '2024-03-15T09:00:00',
-    updated_at: '2024-03-15T09:00:00',
+      category: 'notice',
+      author_id: '1',
+      author_name: '관리자',
+      view_count: 156,
+      created_at: '2025-01-15T09:00:00',
+      updated_at: '2025-01-15T09:00:00',
+    },
   }
+
+  const samplePost = samplePosts[id] || samplePosts['1']
 
   // 첨부파일 조회
   const { data: attachments } = await supabase

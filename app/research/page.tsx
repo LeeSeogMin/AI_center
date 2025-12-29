@@ -1,24 +1,24 @@
 const researchItems = [
   {
-    title: 'AI 윤리 가이드라인 연구보고서',
+    title: 'AI 윤리 가이드라인 연구보고서 (테스트)',
     category: '연구보고서',
     year: '2024',
     description: '국내 AI 개발 및 활용을 위한 윤리적 가이드라인 제안',
   },
   {
-    title: '생성형 AI의 사회적 영향 분석',
+    title: '생성형 AI의 사회적 영향 분석 (테스트)',
     category: '정책보고서',
     year: '2024',
     description: 'ChatGPT 등 생성형 AI가 교육, 노동, 창작 분야에 미치는 영향 분석',
   },
   {
-    title: 'AI 규제 국제 비교 연구',
+    title: 'AI 규제 국제 비교 연구 (테스트)',
     category: '연구보고서',
     year: '2024',
     description: 'EU AI Act, 미국, 중국 등 주요국 AI 규제 동향 비교 분석',
   },
   {
-    title: 'AI 기술 발전과 일자리 변화',
+    title: 'AI 기술 발전과 일자리 변화 (테스트)',
     category: '정책브리프',
     year: '2024',
     description: 'AI 기술 도입에 따른 노동시장 변화 전망 및 정책 제언',
