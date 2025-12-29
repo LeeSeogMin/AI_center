@@ -3,9 +3,10 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
-import { Menu, X, User } from 'lucide-react'
+import { Menu, X, User, Shield } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
+import { getUserRoleClient } from '@/lib/auth'
 
 const navigation = [
   { name: '소개', href: '/about' },
@@ -18,6 +19,7 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [user, setUser] = useState<any>(null)
+  const [isAdmin, setIsAdmin] = useState(false)
   const router = useRouter()
   const supabase = createClient()
 
@@ -25,11 +27,23 @@ export default function Header() {
     const getUser = async () => {
       const { data: { user } } = await supabase.auth.getUser()
       setUser(user)
+
+      if (user) {
+        const role = await getUserRoleClient()
+        setIsAdmin(role === 'admin')
+      }
     }
     getUser()
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
       setUser(session?.user ?? null)
+
+      if (session?.user) {
+        const role = await getUserRoleClient()
+        setIsAdmin(role === 'admin')
+      } else {
+        setIsAdmin(false)
+      }
     })
 
     return () => subscription.unsubscribe()
@@ -84,6 +98,14 @@ export default function Header() {
             <div className="ml-4 pl-4 border-l border-slate-200 flex items-center gap-2">
               {user ? (
                 <>
+                  {isAdmin && (
+                    <Button variant="outline" size="sm" asChild className="border-red-300 text-red-700 hover:bg-red-50">
+                      <Link href="/admin" className="flex items-center gap-1">
+                        <Shield className="h-3 w-3" />
+                        관리자
+                      </Link>
+                    </Button>
+                  )}
                   <div className="flex items-center gap-2 text-sm text-slate-600">
                     <User className="h-4 w-4" />
                     <span>{user.email}</span>
@@ -139,6 +161,14 @@ export default function Header() {
               <div className="pt-4 px-4 space-y-2">
                 {user ? (
                   <>
+                    {isAdmin && (
+                      <Button variant="outline" className="w-full border-red-300 text-red-700 hover:bg-red-50" asChild>
+                        <Link href="/admin" onClick={() => setMobileMenuOpen(false)} className="flex items-center justify-center gap-2">
+                          <Shield className="h-4 w-4" />
+                          관리자 대시보드
+                        </Link>
+                      </Button>
+                    )}
                     <div className="flex items-center gap-2 px-4 py-2 text-sm text-slate-600">
                       <User className="h-4 w-4" />
                       <span>{user.email}</span>

@@ -3,6 +3,7 @@ import { createClient } from '@/lib/supabase/server'
 import { notFound } from 'next/navigation'
 import CommentSection from './CommentSection'
 import DeleteButton from './DeleteButton'
+import { isAdminServer } from '@/lib/auth'
 
 export default async function PostDetailPage({
   params,
@@ -14,6 +15,9 @@ export default async function PostDetailPage({
 
   // 현재 사용자 확인
   const { data: { user } } = await supabase.auth.getUser()
+
+  // 관리자 권한 확인
+  const isAdmin = await isAdminServer()
 
   // 게시글 조회
   const { data: post, error } = await supabase
@@ -115,6 +119,7 @@ AI와 데이터 과학을 통해 행정의 과학화·투명화·효율화를 �
 
   const displayPost = post || samplePost
   const isAuthor = user && displayPost.author_id === user.id
+  const canEdit = isAuthor || isAdmin
 
   const getCategoryLabel = (cat: string) => {
     switch (cat) {
@@ -188,8 +193,13 @@ AI와 데이터 과학을 통해 행정의 과학화·투명화·효율화를 �
           >
             목록으로
           </Link>
-          {isAuthor && (
+          {canEdit && (
             <div className="flex gap-2">
+              {isAdmin && !isAuthor && (
+                <span className="px-3 py-2 bg-red-50 text-red-700 text-sm font-medium rounded-lg">
+                  관리자 권한
+                </span>
+              )}
               <Link
                 href={`/board/write?edit=${id}`}
                 className="px-4 py-2 border rounded-lg hover:bg-gray-50 transition-colors"
