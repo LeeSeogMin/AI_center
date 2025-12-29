@@ -52,7 +52,7 @@ export default async function BoardPage({
     },
     {
       id: '00000000-0000-0000-0000-000000000002',
-      title: '2025년 상반기 AI 정책 세미나 개최 안내',
+      title: '2025년 상반기 AI 정책 세미나 개최 안내 (테스트)',
       category: 'notice',
       author_name: '관리자',
       view_count: 156,
@@ -60,7 +60,7 @@ export default async function BoardPage({
     },
     {
       id: '00000000-0000-0000-0000-000000000003',
-      title: 'AI 윤리 가이드라인 연구보고서',
+      title: 'AI 윤리 가이드라인 연구보고서 (테스트)',
       category: 'data',
       author_name: '김연구',
       view_count: 89,
@@ -68,7 +68,7 @@ export default async function BoardPage({
     },
     {
       id: '00000000-0000-0000-0000-000000000004',
-      title: '연구소 방문 문의드립니다',
+      title: '연구소 방문 문의드립니다 (테스트)',
       category: 'qna',
       author_name: '홍길동',
       view_count: 23,
