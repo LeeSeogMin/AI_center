@@ -16,7 +16,7 @@ export default function Home() {
               <Badge variant="outline" className="mb-4 border-indigo-200 text-indigo-700 bg-indigo-50/50 px-3 py-1">
                 Hanshin University AI Policy Research Institute
               </Badge>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-8 leading-[1.1] text-slate-900">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 leading-[1.2] text-slate-900">
                 인공지능으로 설계하는<br />
                 <span className="text-indigo-600">공공정책의 미래</span>
               </h1>
