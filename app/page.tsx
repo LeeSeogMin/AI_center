@@ -12,9 +12,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-2xl animate-in fade-in slide-in-from-left duration-1000">
+            <div className="max-w-2xl animate-in fade-in-slide-in-from-left duration-1000">
               <Badge variant="outline" className="mb-4 border-indigo-200 text-indigo-700 bg-indigo-50/50 px-3 py-1">
-                Hanshin University AI Policy Research Institute
+                Hanshin University AI Public Policy Research Institute
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 leading-[1.2] text-slate-900">
                 인공지능으로 설계하는<br />
