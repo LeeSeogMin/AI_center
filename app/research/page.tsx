@@ -32,7 +32,7 @@ export default function ResearchPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">연구성과</h1>
           <p className="text-xl text-gray-600">
-            AI 정책연구소의 연구 결과물
+            AI 공공정책연구소의 연구 결과물
           </p>
         </div>
 

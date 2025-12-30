@@ -51,7 +51,7 @@ export default function LoginPage() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold">로그인</h1>
-          <p className="text-gray-600 mt-2">AI 정책연구소에 오신 것을 환영합니다</p>
+          <p className="text-gray-600 mt-2">AI 공공정책연구소에 오신 것을 환영합니다</p>
         </div>
 
         <form onSubmit={handleLogin} className="space-y-6">

@@ -63,7 +63,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold mb-1">소속</h3>
                   <p className="text-gray-600">
-                    한신대학교 AI 정책연구소
+                    한신대학교 AI 공공정책연구소
                   </p>
                 </div>
               </div>

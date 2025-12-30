@@ -44,7 +44,7 @@ export default function MembersPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">연구진</h1>
           <p className="text-xl text-gray-600">
-            한신대 AI 정책연구소를 이끌어가는 전문가들
+            한신대 AI 공공정책연구소를 이끌어가는 전문가들
           </p>
         </div>
 

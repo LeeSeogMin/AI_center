@@ -92,7 +92,7 @@ export default function RegisterPage() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold">회원가입</h1>
-          <p className="text-gray-600 mt-2">AI 정책연구소 회원이 되어주세요</p>
+          <p className="text-gray-600 mt-2">AI 공공정책연구소 회원이 되어주세요</p>
         </div>
 
         <form onSubmit={handleRegister} className="space-y-6">

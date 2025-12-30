@@ -44,7 +44,7 @@ export default async function BoardPage({
   const samplePosts = [
     {
       id: '00000000-0000-0000-0000-000000000001',
-      title: '한신대학교 AI 정책연구소 설립 공지',
+      title: '한신대학교 AI 공공정책연구소 설립 공지',
       category: 'notice',
       author_name: '관리자',
       view_count: 1,

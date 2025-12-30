@@ -184,7 +184,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto">
             <div className="space-y-8">
               {[
-                { year: '2025. 12', event: '한신대학교 AI 정책연구소 설립' },
+                { year: '2025. 12', event: '한신대학교 AI 공공정책연구소 설립' },
                 { year: '2025. 12', event: '연구소 운영 체계 구축' },
                 { year: '2026', event: 'AI 정책 연구 본격 추진' },
               ].map((item, index) => (

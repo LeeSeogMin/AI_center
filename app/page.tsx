@@ -21,7 +21,7 @@ export default function Home() {
                 <span className="text-indigo-600">공공정책의 미래</span>
               </h1>
               <p className="text-xl md::text-2xl text-slate-600 mb-10 leading-relaxed font-light">
-                한신대학교 AI 정책연구소는 데이터와 AI 기술을 통해<br />
+                한신대학교 AI 공공정책연구소는 데이터와 AI 기술을 통해<br />
                 더 투명하고 효율적인 국가와 지역사회 혁신을 이끕니다.
               </p>
               <div className="flex flex-col sm:flex-row gap-5">

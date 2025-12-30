@@ -79,7 +79,7 @@ export default function Header() {
               </div>
               <div className="hidden sm:block">
                 <p className="text-xs text-slate-500 tracking-wider">HANSHIN UNIVERSITY</p>
-                <p className="text-lg font-serif font-semibold text-slate-800">AI 정책연구소</p>
+                <p className="text-lg font-serif font-semibold text-slate-800">AI 공공정책연구소</p>
               </div>
             </Link>
           </div>

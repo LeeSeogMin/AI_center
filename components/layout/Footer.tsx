@@ -13,11 +13,11 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-xs text-slate-500 tracking-wider">HANSHIN UNIVERSITY</p>
-                <p className="text-white font-serif font-semibold">AI 정책연구소</p>
+                <p className="text-white font-serif font-semibold">AI 공공정책연구소</p>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-slate-400 max-w-md">
-              한신대학교 AI 정책연구소는 인공지능 기술의 사회적 영향과
+              한신대학교 AI 공공정책연구소는 인공지능 기술의 사회적 영향과
               정책 방향을 연구하여 더 나은 미래를 설계합니다.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
           <p className="text-slate-500">
-            &copy; {new Date().getFullYear()} 한신대학교 AI 정책연구소. All rights reserved.
+            &copy; {new Date().getFullYear()} 한신대학교 AI 공공정책연구소. All rights reserved.
           </p>
           <div className="flex gap-6 text-slate-500">
             <a href="/about" className="hover:text-slate-300 transition-colors">연구소 소개</a>
