@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Menu, X, User, Shield } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
-import { getUserRoleClient } from '@/lib/auth'
+import { getUserRoleClient } from '@/lib/auth-client'
 
 const navigation = [
   { name: '홈', href: '/' },

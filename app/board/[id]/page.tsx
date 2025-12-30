@@ -3,7 +3,7 @@ import { createClient } from '@/lib/supabase/server'
 import { notFound } from 'next/navigation'
 import CommentSection from './CommentSection'
 import DeleteButton from './DeleteButton'
-import { isAdminServer } from '@/lib/auth'
+import { isAdminServer } from '@/lib/auth-server'
 
 export default async function PostDetailPage({
   params,

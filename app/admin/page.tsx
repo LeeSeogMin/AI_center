@@ -1,6 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
-import { isAdminServer } from '@/lib/auth'
+import { isAdminServer } from '@/lib/auth-server'
 import Link from 'next/link'
 
 export default async function AdminPage() {
