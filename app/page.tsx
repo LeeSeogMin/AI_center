@@ -20,9 +20,9 @@ export default function Home() {
                 인공지능으로 설계하는<br />
                 <span className="text-indigo-600">공공정책의 미래</span>
               </h1>
-              <p className="text-xl md::text-2xl text-slate-600 mb-10 leading-relaxed font-light">
+              <p className="text-xl md::text-2xl text-slate-700 mb-10 leading-relaxed font-medium">
                 한신대학교 AI 공공정책연구소는 데이터와 AI 기술을 통해<br />
-                더 투명하고 효율적인 국가와 지역사회 혁신을 이끕니다.
+                더 투명하고 효율적인 국가와 지역사회 혁신을 이끍니다.
               </p>
               <div className="flex flex-col sm:flex-row gap-5">
                 <Button size="lg" asChild className="bg-indigo-600 text-white hover:bg-indigo-700 h-14 px-8 text-lg rounded-full shadow-lg shadow-indigo-200 transition-all hover:scale-105 active:scale-95">
@@ -73,7 +73,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-800 mb-6 leading-tight">
                 AI 기술 혁신을 위한<br />공공 거버넌스 체계 구축
               </h2>
-              <p className="text-lg text-slate-600 mb-8 leading-relaxed font-light">
+              <p className="text-lg text-slate-700 mb-8 leading-relaxed font-medium">
                 우리는 AI 도입을 저해하는 기존 행정 구조를 진단하고, 성과 중심의 운영 모델과 책임 있는 AI 거버넌스를 설계합니다.
               </p>
               <Button variant="link" asChild className="text-indigo-600 font-semibold p-0 h-auto text-lg hover:no-underline group">
@@ -96,7 +96,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-800 mb-6 leading-tight">
                 데이터 기반의<br />지능형 정책 시뮬레이션
               </h2>
-              <p className="text-lg text-slate-600 mb-8 leading-relaxed font-light">
+              <p className="text-lg text-slate-700 mb-8 leading-relaxed font-medium">
                 정량적 예측과 AI 기반 시뮬레이션을 통해 정책의 효과를 미리 평가하고, 행정 서비스의 전주기를 과학화합니다.
               </p>
               <Button variant="link" asChild className="text-blue-600 font-semibold p-0 h-auto text-lg hover:no-underline group">
@@ -157,7 +157,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-white">
               <h2 className="text-3xl font-serif font-bold mb-4">연구 협력 및 문의</h2>
-              <p className="text-indigo-100 font-light text-lg">
+              <p className="text-indigo-100 font-medium text-lg">
                 인공지능 기반 공공혁신 연구를 성사시키기 위한 소중한 제안을 기다립니다.
               </p>
             </div>

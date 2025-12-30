@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation'
 import { getUserRoleClient } from '@/lib/auth'
 
 const navigation = [
+  { name: '홈', href: '/' },
   { name: '소개', href: '/about' },
   { name: '연구진', href: '/members' },
   { name: '연구성과', href: '/research' },
