@@ -57,3 +57,36 @@ export interface Research {
   link?: string
   created_at: string
 }
+
+// Organization Members (연구진 페이지용)
+export interface OrganizationMember {
+  name: string
+  phone?: string
+  email?: string
+  researchAreas?: string
+  position?: string        // 한신대 직급
+  office?: string         // 연구실
+  institution?: string    // 외부 소속기관
+  externalPosition?: string  // 외부 직위
+}
+
+// Research Lab (연구실)
+export interface ResearchLab {
+  name: string
+  color: 'indigo' | 'blue' | 'violet'
+  director: OrganizationMember
+  researchers: OrganizationMember[]
+  visitingResearchers: (OrganizationMember | null)[]
+}
+
+// Director (연구소장)
+export interface Director extends OrganizationMember {
+  title: string
+}
+
+// Advisor (자문위원)
+export interface Advisor extends OrganizationMember {
+  institution: string
+  externalPosition: string
+  researchAreas: string
+}
